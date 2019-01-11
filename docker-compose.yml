@@ -1,12 +1,12 @@
 selenium-hub:
-  image: selenium/hub
+  image: selenium/hub:3.14.0-gallium
   ports:
   - 4444:4444
   environment:
   - GRID_MAX_SESSION=30
 
 chrome:
-  image: selenium/node-chrome
+  image: selenium/node-chrome:3.14.0-gallium
   environment:
   - NODE_MAX_INSTANCES=30
   - NODE_MAX_SESSION=30
